@@ -3,6 +3,7 @@
   "name": "Airing Advisor",
   "codeowners": ["@CodeArcade-ctrl"],
   "config_flow": true,
+  "categories": ["climate.fans_ventilation", "helpers.calculate_value"],
   "documentation": "https://github.com/CodeArcade-ctrl/airing-advisor",
   "issue_tracker": "https://github.com/CodeArcade-ctrl/airing-advisor/issues",
   "iot_class": "local_polling",
