@@ -1,0 +1,32 @@
+{
+  "config": {
+    "step": {
+      "user": {
+        "title": "Choose indoor and outdoor sensors",
+        "description": "Select temperature and relative-humidity sensors for indoors and outdoors.",
+        "data": {
+          "indoor_temperature": "Indoor temperature",
+          "indoor_humidity": "Indoor relative humidity",
+          "outdoor_temperature": "Outdoor temperature",
+          "outdoor_humidity": "Outdoor relative humidity"
+        }
+      }
+    },
+    "abort": {
+      "already_configured": "This set of sensors is already configured."
+    }
+  },
+  "entity": {
+    "sensor": {
+      "absolute_humidity_difference": {
+        "name": "Indoor minus outdoor absolute humidity"
+      }
+    },
+    "binary_sensor": {
+      "ventilation_recommended": {
+        "name": "Ventilate recommended",
+        "state": {"on": "Yes", "off": "No"}
+      }
+    }
+  }
+}

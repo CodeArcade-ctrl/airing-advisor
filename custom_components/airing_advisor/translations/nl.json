@@ -1,0 +1,32 @@
+{
+  "config": {
+    "step": {
+      "user": {
+        "title": "Kies binnen- en buitensensoren",
+        "description": "Selecteer temperatuursensoren en relatieve-luchtvochtigheidssensoren voor binnen en buiten.",
+        "data": {
+          "indoor_temperature": "Binnentemperatuur",
+          "indoor_humidity": "Relatieve luchtvochtigheid binnen",
+          "outdoor_temperature": "Buitentemperatuur",
+          "outdoor_humidity": "Relatieve luchtvochtigheid buiten"
+        }
+      }
+    },
+    "abort": {
+      "already_configured": "Deze sensorset is al ingesteld."
+    }
+  },
+  "entity": {
+    "sensor": {
+      "absolute_humidity_difference": {
+        "name": "Absoluut vochtverschil binnen en buiten"
+      }
+    },
+    "binary_sensor": {
+      "ventilation_recommended": {
+        "name": "Ventileren aanbevolen",
+        "state": {"on": "Ja", "off": "Nee"}
+      }
+    }
+  }
+}
